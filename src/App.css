@@ -1,38 +1,262 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.header{
+  width: 100%;
+  height: 100vh;
+  background:url("images/banner2.png.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  overflow: hidden;
+}
+.navbar{
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  background:#1f2235;
+  z-index: 1;
+}
+.navbar_container{
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_left-logo img{
+  width: 110px;
+
+}
+.navbar_right{
+  display: flex;
+  list-style-type: none;
+ 
+}
+.navbar_right li{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500px;
+  font-size: 18px;
+  padding: 0 15px;
+  
+
+}
+
+.container{
+  width:1200px;
+  margin: 0 auto;
+
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.row{
+  display:flex;
+  width: 100px;
+}
+.col-6{
+  width: 50%;
+}
+
+
+.col-4{
+  width: 33.33333333333333%;
+}
+
+/* header */
+.header_content{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color:#fff
+}
+.header_ul{
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 20px;
+}
+.header_ul li{
+  width: 50px;
+  height: 50px;
+  border: 2px solid red;
+  border-radius: 50%;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 0 10px;
+}
+.header_ul li:first-child{
+  margin-left: 0;
+}
+.header-section h1{
+  font-size: 57px;
+  font-weight: 700;
+  margin-bottom: 20px;
+
+}
+.header_section p{
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+.btn{
+  outline: none;
+  border:none;
+  color: #fff;
+  padding: 1px 10px;
+  text-decoration: none;
+  
+  
+}
+.btn-outline{
+  border: 1px solid red;
+  border-radius: 23px;
+  padding: 10px 10px;
+}
+.btn-smart{
+  background:red;
+  padding: 13px 40px;
+  border-radius: 50px;
+}
+
+.services{
+  background:#1f2235;
+  padding: 100px 0;
+  color: #fff;
+}
+.common{
+  width:33.33333333333333;
+  margin: 20px auto;
   text-align: center;
 }
+.heading{
+  margin-bottom: 20px;
+  font-weight: 500;
+  color:red;
+  font-size: 16px;
+}
+.main-header{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.main-content{
+  font-size: 16px;
+  color: #fff;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}
+.common-border{
+  background:red;
+  height: 3px;
+  width: 100px;
+  margin: 30px auto;
+}
+.services-box{
+   padding: 40px;
+   background:#23263a;
+   color: #fff;
+   /* margin: 20px; */
+   /* grid-gap: 50px 100px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.github{
+  font-size: 40px;
+  color: red;
+  margin-bottom: 15px;
+}
+.services-box-header{
+  font-size: 20px;
+  font-weight:500;
+  margin-bottom: 15px;
+}
+.row-2nd{
+  width: 100%;
+  flex: wrap;
+  background:#fff
+}
+.grid-container{
+  display:inline-grid;
+  grid-template-columns:  auto auto auto;
+
+}
+.grid-item{
+  width:90%;
+  margin: 20px;
+
+}
+.about{
+  width: 100%;
+  background: #23263a;
+  padding: 100px 0;
+}
+.mainHeader{
+  color: #fff;
+  font-size: 32px;
+  margin: bottom 20px;
+}
+.mainContent{
+  color: #fff;
+}
+/* .commonBorder{
+  width:33.33333333333333;
+  margin: 20px auto;
+  text-align: center;
+  line-height-step: auto;
+} */
+
+.about-img{
+  padding: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
+.about-info{
+  color: #fff;
 }
+.about-info h1{
+  margin-bottom: 20px;
+}
+.about-info-p{
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.about-info-p2{
+font-size: 14px;
+}
+.row-3rd{
+  width: 100%;
+  /* flex: wrap; */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ 
 }
+.info-contact{
+  margin-top: 20px;
+}
+.info-contact strong{
+  color:blueviolet;
+}
+.info-contact p{
+  margin-top: 3px;
+}
+.info-contact .col-6{
+  margin: 15px 0;
+}
+.container-1{
+display:flex;
+/* flex-direction: column; */
+}
+.my-info{
+  display:grid;
+  grid-template-columns: auto auto;
+
+}
+/* .info-grid{
+  grid-template-columns: repeat(2fr)
+} */

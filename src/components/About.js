@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import banner4 from '../images/banner4.png.png';
+import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 const About = () => {
     const [header] = useState({
@@ -10,10 +12,12 @@ const About = () => {
         { id: 1, title: "Name", text: "Mowsumi" },
         { id: 2, title: "Email", text: "mow521202sumi@gmail.com" },
         { id: 1, title: "Phone", text: "+02135656585" },
-        { id: 1, title: "LinkedIn", text: "Mowsumi" },
+        { id: 1, title: "LinkedIn", text: "https://www.linkedin.com/in/mowsumi-aktar-a92082211/" },
     ])
     return (
         <div className="about">
+         <Navbar />
+
             <div className="container">
                 <div className="common">
                     {/* <h3 className="heading">{header.mainHeader}</h3> */}
@@ -40,7 +44,8 @@ const About = () => {
                                             <div className="info-div">
                                                 <div className='info-grid'>
                                                 <strong>{info.title}</strong>
-                                                <p>{info.text}</p>
+                                               <a href="https://www.linkedin.com/in/mowsumi-aktar-a92082211" ><p>{info.text}</p></a>
+                                               
                                                 </div>
                                             </div>
                                         ))}

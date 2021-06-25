@@ -1,8 +1,15 @@
 import React from 'react';
 import{FaGithub,DiHtml5} from 'react-icons/fa';
+import Navbar from './Navbar';
+
 const Services = () => {
     return (
+
+       
         <div className="services">
+
+         <Navbar />
+
         
             <div className="container">
                 <div className="services-header">
